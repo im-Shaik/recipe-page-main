@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 15px;
+}
+.prepare-list ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main-asset ~ div {
+  margin: 0px;
+  padding: 5px 30px;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+}
+
+.main-asset {
+  height: 350px;
+  width: 100%;
+}
+
+.main-asset img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.heading h1 {
+  font-family: "Young Serif", serif !important;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(39, 38, 38);
+}
+
+.para {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.prepare-list {
+  background-color: hsl(330, 100%, 98%);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.prepare-list h2 {
+  color: hsl(332, 51%, 32%);
+}
+
+.prepare-list ul li {
+  margin-bottom: 10px;
+}
+.prepare-list ul li span {
+  font-weight: 600;
+}
+
+.ingredient-list,
+.instruction-list {
+  padding-bottom: 30px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid rgb(220, 213, 213);
+}
+
+.ingredient-list ul li {
+  margin-bottom: 15px;
+}
+.ingredient-list h2,
+.instruction-list h2,
+.nutrition h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif !important;
+}
+
+.instruction-list ul {
+  list-style-type: decimal;
+}
+
+.nutrition ul li span,
+.instruction-list ul li::marker,
+.ingredient-list ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.instruction-list ul li {
+  margin-bottom: 15px;
+}
+
+.instruction-list ul li span {
+  font-weight: 600;
+}
+
+.nutrition p {
+  margin-bottom: 25px;
+}
+
+.nutrition ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nutrition ul li {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 200px 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(177, 174, 174);
+}
+
+.nutrition ul li:last-child {
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: grid;
+    place-items: center;
+    background-color: hsl(330, 50%, 91%);
+    place-items: center;
+  }
+  ul li {
+    padding-left: 30px;
+  }
+
+  .container {
+    border-radius: 30px;
+    padding: 50px;
+    margin: 130px 0;
+    width: 700px;
+  }
+
+  .main-asset {
+    height: 350px;
+    width: 100%;
+  }
+  .main-asset img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .nutrition ul li {
+    grid-template-columns: 360px 100px;
+  }
+}
