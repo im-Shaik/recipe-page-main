@@ -2,6 +2,8 @@
 
 ![Design preview for the Recipe page coding challenge](./preview.jpg)
 
+Preview the site (https://im-shaik.github.io/recipe-page-main/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
